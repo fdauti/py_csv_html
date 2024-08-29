@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Processing Webform</title>
+    <style>
+        body { background-color: azure; } 
+        select{height:240px}
+    </style>
+</head>
+<body>
+    <h3>CSV to HTML file conversion</h3>
+    <form method="POST" action="csv_process_q3.py">
+        <fieldset>
+            <legend>Selection Webform</legend>
+            <p>
+                Select CSV file to display: <input type="file" name="filename">
+            </p>
+            Select columns from file1.csv: <select name="column" multiple> 
+                <option value="Student ID">Student ID</option>
+                <option value="Class Activity -- Oct9 [Total Pts: 10 Score] |2336087">Oct9: Class Activity</option>
+                <option value="OCt 10: Class Activities [Total Pts: 10 Score] |2336877">Oct10: Class Activities</option>
+                <option value="Lab: Oct11 [Total Pts: 10 Score] |2337058">Oct11: Lab Activity</option>
+                <option value="Oct15:Class Activities [Total Pts: 10 Score] |2338422">Oct15: Class Activities</option>
+                <option value="Lab:Oct16 [Total Pts: 10 Score] |2338579">Oct16: Lab Activity</option>
+                <option value="Class Activity Oct17 [Total Pts: 10 Score] |2339309">Oct17: Class Activity</option>
+                <option value="Lab-Oct18 [Total Pts: 10 Score] |2339494">Oct18: Lab Activity</option>
+                <option value="Oct22, Class Activity [Total Pts: 10 Score] |2340310">Oct22: Class Activity</option>
+                <option value="Lab-Oct23 [Total Pts: 10 Score] |2340400">Oct23: Lab Activity</option>
+                <option value="Class Activity: OCT24 [Total Pts: 10 Score] |2340833">Oct24: Class Activity</option>
+                <option value="Lab-Oct25 [Total Pts: 10 Score] |2340970">Oct25: Lab Activity</option>
+                <option value="Final Project [Total Pts: 100 Score] |2340979">Final Project</option>
+                <option value="Final Project Documentation [Total Pts: 10 Score] |2343801">Final Project Documentation</option>
+            </select>
+            Select columns from file2.csv: <select name="column" multiple> 
+                <option value="Student ID">Student ID</option>
+                <option value="Class Activity Sep 26 [Total Pts: 10 Score] |2330311">Sep26: Class Activity</option>
+                <option value="Quiz [Total Pts: 100 Score] |2340979">Quiz</option>
+                <option value="Lab Activity Sep 27 [Total Pts: 10 Score] |2330615">Sep27: Lab Activity</option>
+                <option value="Lab: 30 September [Total Pts: 10 Score] |2331807">Sep30: Lab Activity</option>
+                <option value="Lab Activity: Oct 2 [Total Pts: 10 Score] |2333172">Oct2: Lab Activity</option>
+                <option value="ClassActivity-Oct3 [Total Pts: 10 Score] |2333627">Oct3: Class Activity</option>
+                <option value="Lab Activity: Oct 4 [Total Pts: 10 Score] |2333877">Oct4: Lab Activity</option>
+                <option value="Group Evaluation: Web Project 1 [Total Pts: 10 Score] |2335008">Group Evaluation: Web Project 1</option>
+                <option value="Group Project [Total Pts: 100 Score] |2330614">Group Project</option>
+            </select>
+            <p><input type="submit" value="Process File"></p> 
+        </fieldset>
+    </form>
+</body>
+</html>
